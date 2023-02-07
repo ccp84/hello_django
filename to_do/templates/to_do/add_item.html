@@ -7,23 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>To Do List</h1>
-
-    <table>
-        {% for item in items %}
-            <tr>
-                {% if item.done %}
-                    <td style="text-decoration: line-through;">{{ item.name }}</td>
-                {% else %}
-                    <td>{{ item.name }}</td>
-                {% endif %}
-            </tr>
-        {% empty %}
-            <tr>
-                <td>You have nothing to do.</td>
-            </tr>
-        {% endfor %}
-    </table>
+    <h1>Add Item</h1>
 
 </body>
 </html>
