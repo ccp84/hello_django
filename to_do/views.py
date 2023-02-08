@@ -23,3 +23,7 @@ def add_item(request):
         'form': form
     }
     return render(request, "to_do/add_item.html", context)
+
+
+def edit_item(request, item_id):
+    return render(request, "to_do/edit_item.html")
