@@ -11,18 +11,7 @@
 
     <form method="POST" action="add">
         {% csrf_token %}
-        <div>
-            <p>
-                <label for="id_name">Item name: </label>
-                <input type="text" name="item_name" id="id_name">
-            </p>
-        </div>
-        <div>
-            <p>
-                <label for="id_done">Done?: </label>
-                <input type="checkbox" name="done" id="id_done"/>
-            </p>
-        </div>
+        {{ form.as_p }}
         <div>
             <p>
                 <button type="submit">Add Item</button>
